@@ -40,6 +40,17 @@
         wget http://fast.dpdk.org/rel/dpdk-17.11.2.tar.xz
     Build prox
         git clone https://github.com/opnfv/samplevnf.git
+        
+##### 9. Prepare machines
+    Configure virtio-setup.sh and sriov-setup.sh scripts with correct parameters.
+    Run virtio-setup.sh or sriov-setup.sh on repective machines
+    * Please note that VMs should be shut down while running these scripts.
+    Start up VMs
+    Configure & run start_testpmd.sh
+    Configure and run start_prox.sh
+    * Please enter config details into setup_diagram.txt before hand
+    
+    
 
 
 
