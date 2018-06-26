@@ -1,0 +1,31 @@
+# Setup Diagram
+# Please use this as refrence to setup prox details
+# Please specify MACs in hex format as follows
+
+# MAC
+# df:e5:c1:67:92:e0       df e5 c1 67 92 e0
+
+# Example
+# MAC1=df e5 c1 67 92 e0
+
+VM_TX_MAC1=
+VM_TX_MAC2=
+
+VM_4D_MAC1=
+VM_4D_MAC2=
+
+#    +---------------+           +---------------+ 
+#    |    VM TX      |           |    VM 4D      | 
+#    |               |           |               | 
+#    |  MAC1   MAC2  |           |  MAC1   MAC2  | 
+#    +---------------+           +---------------+ 
+#        |      |                    |      |      
+#       VF1    VF2                  VF1    VF2
+#        |      |                    |      |      
+#    +---------------+           +---------------+ 
+#    |    HOST TX    |           |    HOST 4D    | 
+#    |               |           |               | 
+#    |            P0 | ========= |  P0           | 
+#    +---------------+           +---------------+ 
+
+

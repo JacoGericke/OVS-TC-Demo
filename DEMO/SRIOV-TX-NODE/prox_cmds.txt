@@ -1,0 +1,19 @@
+portX <core> <task>
+
+speed 1 0 <speed> - 12 & 22
+speed 3 0 <speed> - 13 & 23
+speed 1,3 0 <speed>
+
+pkt_size 1 0 <size>
+
+speed 1,3 0 100                        - Set speed to max
+
+# dst ports
+set random 1 0 36 00XXXXXXXXXXXXXX 2   - Set 0-32767 ports - VF 1
+set random 3 0 36 01XXXXXXXXXXXXXX 2   - Set 32767-65535 ports - VF2
+
+# src ports
+set random 1 0 34 00XXXXXXXXXXXXXX 2   - Set 0-32767 ports - VF 1
+set random 3 0 34 01XXXXXXXXXXXXXX 2   - Set 32767-65535 ports - VF2
+
+
