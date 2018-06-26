@@ -1,4 +1,4 @@
-##### 1. Machines need to be setup back-to-back.
+##### 1. Ubuntu / Debian machines need to be setup back-to-back.
 
 ##### 2. Enable hugepages 
     echo 8196 > /sys/kernel/mm/hugepages/hugepages-2048kB/nr_hugepages
